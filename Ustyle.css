@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Nanum Gothic", sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: rgb(48,205,215);
+    --sub-color: white;
+}
+
+/* Invisible */
+.header-menu-College,
+.header-menu-SAT,
+.header-menu-Med {
+    display: none;
+}
+
+#header {
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    background-color: white;
+    height: 80px;
+    /*border-bottom: solid 1px black;*/
+    display: flex;
+    justify-content: space-between;
+}
+
+#header.show {
+    animation: show 0.5s forwards;
+}
+
+#header:not(.show) {
+    animation: disappear 0.5s forwards;
+}
+
+.header-logo {
+    margin-left: 120px;
+    align-self: center;
+}
+
+a:has(h1.header-logo-text) {
+    text-decoration: none;
+}
+
+.header-logo-text {
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 40px;
+}
+
+.header-menu {
+    margin-right: 100px;
+    display: flex;
+    width: 30vw;
+    justify-content: space-between;
+}
+
+.header-menu-ele {
+    text-decoration: none;
+    color: black;
+    align-self: center;
+    animation-name: out;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 20px 10px;
+}
+
+.header-menu-ele:hover {
+    cursor: pointer;
+}
+
+.header-menu-ele:hover {
+    animation-name: in;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes show {
+    0% {
+        transform: translateY(-100%); 
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes disappear {
+    0% {
+        transform: translateY(0%); 
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes in {
+    0% {
+        color: black;
+    }
+    100% {
+        color: var(--main-color);
+    }
+}
+
+@keyframes out {
+    0% {
+        color: var(--main-color);
+    }
+    100% {
+        color: black;
+    }
+}
+
+#footer {
+    background-color: var(--main-color);
+    height: 30vw;
+}

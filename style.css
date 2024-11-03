@@ -1,0 +1,188 @@
+/* Commons */
+.section-title {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 5vw;
+}
+.under-line {
+    text-decoration: underline;
+}
+
+
+/* Main Section */
+#main {
+    padding-top: 5%;
+    padding-bottom: 3%;
+    background-color: rgb(240,240,240);
+}
+
+.main-title {
+    width: 60%;
+    margin-left: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-title-text {
+    font-size: 50px;
+}
+
+.main-title-text2 {
+    color: rgb(158,63,253);
+}
+
+.main-description {
+    color: gray;
+    padding: 30px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.main-link-container {
+    display: flex;
+    width: 60%;
+    margin-top: 2%;
+    margin-left: 20%;
+    justify-content: space-between;
+}
+
+.main-link-container a {
+    text-decoration: none;
+}
+
+.main-link-item {
+    width: 200px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.main-link-item p {
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 900;
+}
+
+.main-link-kakao {
+    background-color: rgb(250,225,0);
+}
+
+.main-link-kakao p {
+    color: rgb(60,29,30);
+}
+
+.main-link-blog {
+    background-color: rgb(42,196,75);
+    color: white;
+}
+
+.main-link-instagram {
+    background-color: rgb(196,145,247);
+    color: white;
+}
+
+.main-link-youtube {
+    background-color: rgb(247,0,0);
+    color: white;
+}
+
+/* Stats Section*/
+
+#stats {
+    margin-bottom: 100px;
+}
+
+.stats-container {
+    display: flex;
+    padding-right: 20%;
+    padding-left: 20%;
+    justify-content: space-between;
+}
+
+.stats-item {
+    text-align: center;
+}
+
+.stats-item-title {
+    font-size: 10vw;
+    font-weight: bolder;
+}
+
+.stats-item-para {
+    font-size: 30px;
+}
+
+/* Why EduGate Section */
+
+#why {
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.why-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 2vw;
+}
+
+.why-element {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
+.why-element img {
+    align-self: center;
+    width: 80%;
+}
+
+.why-element-title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.why-element-para {
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+/* Review Section */
+#review {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-bottom: 100px;
+}
+
+.review-collection {
+    display: flex;
+    justify-content: space-around;
+}
+
+.review-box {
+    position: relative;
+    border: solid 1px rgb(182, 181, 181);
+    border-radius: 10px;
+    padding: 30px;
+    width: 20vw;
+}
+
+.review-box-title {
+    margin-bottom: 1vw;
+    font-size: 1.5vw;
+}
+
+.review-box-sub {
+    font-size: 1.2vw;
+}
+
+.review-box-content {
+    font-size: 1vw;
+}
+
+.review-box img {
+    position: absolute;
+    top: 1vw;
+    right: 1.3vw;
+    width: 4vw;
+}

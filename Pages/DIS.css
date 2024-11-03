@@ -1,0 +1,279 @@
+#DIS-title {
+    font-size: 40px;
+    padding: 4vw;
+    background-color: #416B9A;
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+}
+
+.DIS-title-box {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 2vw;
+    height: 8.5vw;
+    width: 53.6vw;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-60%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+.DIS-title-box-text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 3.5vw;
+}
+
+.DIS-title-box-deco {
+    position: absolute;
+    top: 9.5vw;
+    left: 5vw;
+    border: solid white 0.2vw;
+    /*background-color: transparent;*/
+    height: 8.5vw;
+    width: 53.6vw;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+/* Programs Section */
+
+#DIS-programs {
+    display: flex;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.DIS-programs-program {
+    box-sizing: border-box;
+    width: 25vw;
+    height: 18vw;
+    padding-top: 1.5vw;
+    padding-bottom: 2vw;
+}
+
+.DIS-programs-1 {
+    background-color: rgb(240, 240, 240);
+}
+
+.DIS-programs-2 {
+    background-color: rgb(230, 230, 230);
+}
+
+.DIS-programs-3 {
+    background-color: rgb(210, 210, 210);
+}
+
+.DIS-programs-4 {
+    background-color: rgb(190, 190, 190);
+}
+
+.DIS-programs-program-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 2.5vw;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.DIS-programs-program-list {
+    padding-left: 1vw;
+    list-style-type: none;
+}
+
+.DIS-programs-program-list li {
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.DIS-programs-program-list li:first-of-type {
+    margin-top: 30px;
+}
+
+
+/* Strategy Section */
+
+#DIS-strategy {
+    margin-top: 10vw;
+    box-sizing: border-box;
+}
+
+.DIS-strategy-title {
+    box-sizing: content-box;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 600;
+    font-size: 4vw;
+    margin-bottom: 1vw;
+    text-align: center;
+}
+
+.DIS-strategy-container {
+    display: flex;
+}
+
+.DIS-strategy-container .DIS-strategy-ele:nth-child(1) {
+    background-color: #80a9dbb1;
+}
+
+.DIS-strategy-container .DIS-strategy-ele:nth-child(2) {
+    background-color: #94bae873;
+}
+
+.DIS-strategy-container .DIS-strategy-ele:nth-child(3) {
+    background-color: #b2c8e45f;
+}
+
+.DIS-strategy-ele {
+    width: 33.3vw;
+    padding: 4vw 0;
+}
+
+.DIS-strategy-ele-title {
+    text-align: center;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.DIS-strategy-ele-title span {
+    font-weight: 400;
+}
+
+.DIS-strategy-ele-para {
+    margin-top: 2vw;
+    padding: 0 2vw;
+    font-size: 25px;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+/* Books Section */
+#DIS-books {
+    padding-top: 5vw;
+    margin-bottom: 10vw;
+}
+
+.DIS-books-text {
+    margin-left: 2vw;
+    box-sizing: border-box;
+}
+
+.DIS-books-text-title {
+    margin: 3vw;
+    text-align: center;
+    font-size: 3vw;
+}
+
+.DIS-books-text-list {
+    margin-left: 10vw;
+}
+
+.DIS-books-text-list-ele {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.DIS-books-ele {
+    position: relative;
+}
+
+.DIS-books-ele img {
+    width: 20vw;
+    opacity: 1;
+    position: relative;
+    z-index: 2;
+    transition: 1s;
+}
+
+.DIS-books-ele img:hover {
+    opacity: 0.15;
+}
+
+.DIS-books-ele p {
+    box-sizing: border-box;
+    padding: 1vw;
+    width: 20vw;
+    height: 28.3vw;
+    font-size: 20px;
+    position:absolute;
+    background-color: #B7ECEF;
+    top:0;
+}
+
+.DIS-books-ele-title {
+    text-align: center;
+}
+
+.DIS-books-visual {
+    position: relative;
+    margin-top: 5vw;
+}
+
+.DIS-books-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-around;
+}
+
+
+/* Blog Section */
+#DIS-blog {
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+.DIS-blog-title {
+    text-align: center;
+    font-size: 3.5vw;
+    margin-bottom: 3vw;
+}
+
+.DIS-blog-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.DIS-blog-ele {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+}
+
+.DIS-blog-ele img {
+    width: 27vw;
+}
+
+.DIS-blog-ele-title {
+    text-align: center;
+    text-decoration: underline;
+    color: black;
+    margin-top: 1vw;
+    font-size: 1vw;
+}
+
+#DIS-quote {
+    box-sizing: border-box;
+    height: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 10vw;
+}
+
+.DIS-quote-ele {
+    text-align: center;
+    font-size: 3vw;
+}
+
+#empty {
+    height: 10vh;
+}

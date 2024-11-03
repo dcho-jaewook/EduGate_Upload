@@ -1,0 +1,145 @@
+#Chadwick-title {
+    font-size: 40px;
+    padding: 4vw;
+    background-color: #012B55;
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+}
+
+.Chadwick-title-box {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 2vw;
+    height: 8.5vw;
+    width: 60vw;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-60%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+.Chadwick-title-box-text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+.Chadwick-title-box-deco {
+    position: absolute;
+    top: 9.5vw;
+    left: 5vw;
+    border: solid white 0.2vw;
+    /*background-color: transparent;*/
+    height: 8.5vw;
+    width: 60vw;
+
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+/* Programs Section */
+
+#Chadwick-programs {
+  display: flex;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.Chadwick-programs-program {
+  box-sizing: border-box;
+  width: 25vw;
+  height: 15vw;
+  padding-top: 1.5vw;
+  padding-bottom: 2vw;
+}
+
+.Chadwick-programs-1 {
+  background-color: rgb(240, 240, 240);
+}
+
+.Chadwick-programs-2 {
+  background-color: rgb(230, 230, 230);
+}
+
+.Chadwick-programs-3 {
+  background-color: rgb(210, 210, 210);
+}
+
+.Chadwick-programs-4 {
+  background-color: rgb(190, 190, 190);
+}
+
+.Chadwick-programs-program-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.5vw;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.Chadwick-programs-program p {
+  padding: 1.2vw;
+  font-size: 1.2vw;
+}
+
+/* Strategy Section */
+
+#Chadwick-strategy {
+  margin-top: 10vw;
+  box-sizing: border-box;
+}
+
+.Chadwick-strategy-title {
+  box-sizing: content-box;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  font-size: 60px;
+  margin-bottom: 1vw;
+  text-align: center;
+}
+
+.Chadwick-strategy-container {
+  display: flex;
+}
+
+.Chadwick-strategy-container .Chadwick-strategy-ele:nth-child(1) {
+  background-color: #80a9dbb1;
+}
+
+.Chadwick-strategy-container .Chadwick-strategy-ele:nth-child(2) {
+  background-color: #94bae873;
+}
+
+.Chadwick-strategy-container .Chadwick-strategy-ele:nth-child(3) {
+  background-color: #b2c8e45f;
+}
+
+.Chadwick-strategy-ele {
+  width: 33.3vw;
+  padding: 4vw 0;
+}
+
+.Chadwick-strategy-ele-title {
+  text-align: center;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.Chadwick-strategy-ele-title span {
+  font-weight: 400;
+}
+
+.Chadwick-strategy-ele-para {
+  margin-top: 2vw;
+  padding: 0 2vw;
+  font-size: 25px;
+  font-family: "Noto Sans KR", sans-serif;
+}
