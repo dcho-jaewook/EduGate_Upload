@@ -17,15 +17,9 @@
     background-color: rgb(240,240,240);
 }
 
-.main-title {
-    width: 60%;
-    margin-left: 20%;
-    display: flex;
-    justify-content: space-between;
-}
-
 .main-title-text {
-    font-size: 50px;
+    font-size: 3.5vw;
+    text-align: center;
 }
 
 .main-title-text2 {
@@ -41,10 +35,8 @@
 
 .main-link-container {
     display: flex;
-    width: 60%;
     margin-top: 2%;
-    margin-left: 20%;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .main-link-container a {
