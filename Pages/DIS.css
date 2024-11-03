@@ -1,5 +1,5 @@
 #DIS-title {
-    font-size: 40px;
+    font-size: 2.5vw;
     padding: 4vw;
     background-color: #416B9A;
     display: flex;
@@ -14,7 +14,7 @@
     background-color: white;
     padding: 2vw;
     height: 8.5vw;
-    width: 53.6vw;
+    width: 60vw;
     animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
@@ -30,7 +30,6 @@
 .DIS-title-box-text {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    font-size: 3.5vw;
 }
 
 .DIS-title-box-deco {
@@ -40,7 +39,8 @@
     border: solid white 0.2vw;
     /*background-color: transparent;*/
     height: 8.5vw;
-    width: 53.6vw;
+    width: 60vw;
+
     animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
@@ -80,7 +80,6 @@
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 2.5vw;
-    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -90,12 +89,12 @@
 }
 
 .DIS-programs-program-list li {
-    margin: 15px 0;
-    font-size: 20px;
+    margin: 1vw 0;
+    font-size: 1.2vw;
 }
 
 .DIS-programs-program-list li:first-of-type {
-    margin-top: 30px;
+    margin-top: 2vw;
 }
 
 
@@ -140,7 +139,7 @@
     text-align: center;
     font-family: "Noto Sans KR", sans-serif;
     font-weight: 800;
-    font-size: 30px;
+    font-size: 1.7vw;
 }
 
 .DIS-strategy-ele-title span {
@@ -150,7 +149,7 @@
 .DIS-strategy-ele-para {
     margin-top: 2vw;
     padding: 0 2vw;
-    font-size: 25px;
+    font-size: 1.4vw;
     font-family: "Noto Sans KR", sans-serif;
 }
 
@@ -175,17 +174,16 @@
     margin-left: 10vw;
 }
 
-.DIS-books-text-list-ele {
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-
 .DIS-books-ele {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .DIS-books-ele img {
-    width: 20vw;
+    width: 18.5vw;
     opacity: 1;
     position: relative;
     z-index: 2;
@@ -199,15 +197,17 @@
 .DIS-books-ele p {
     box-sizing: border-box;
     padding: 1vw;
-    width: 20vw;
-    height: 28.3vw;
-    font-size: 20px;
+    width: 18.5vw;
+    height: 26vw;
+    font-size: 1.1vw;
     position:absolute;
     background-color: #B7ECEF;
     top:0;
 }
 
 .DIS-books-ele-title {
+    margin-top: 0.9vw;
+    font-size: 1.7vw;
     text-align: center;
 }
 
@@ -267,6 +267,7 @@
     flex-direction: column;
     justify-content: space-around;
     margin-bottom: 10vw;
+    margin-top: 10vw;
 }
 
 .DIS-quote-ele {

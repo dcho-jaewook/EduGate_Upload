@@ -1,5 +1,5 @@
 #Chadwick-title {
-    font-size: 40px;
+    font-size: 2.5vw;
     padding: 4vw;
     background-color: #012B55;
     display: flex;
@@ -14,7 +14,7 @@
     background-color: white;
     padding: 2vw;
     height: 8.5vw;
-    width: 60vw;
+    width: 65vw;
     animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
@@ -39,7 +39,7 @@
     border: solid white 0.2vw;
     /*background-color: transparent;*/
     height: 8.5vw;
-    width: 60vw;
+    width: 65vw;
 
     animation: 1s ease-out 0s 1 slideInFromLeft;
 }
@@ -142,4 +142,24 @@
   padding: 0 2vw;
   font-size: 25px;
   font-family: "Noto Sans KR", sans-serif;
+}
+
+/* Impact */
+#Chadwick-impact {
+  margin-top: 5vw;
+  padding-left: 10vw;
+}
+
+.Chadwick-impact-line {
+  display: flex;
+  align-items: center;
+}
+
+.Chadwick-impact-line img {
+  width: 7vw;
+}
+
+.Chadwick-impact-line h2 {
+  font-size: 2.5vw;
+  font-style:italic;
 }
