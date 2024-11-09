@@ -123,4 +123,34 @@ a:has(h1.header-logo-text) {
 #footer {
     background-color: var(--main-color);
     height: 30vw;
+    color: white;
+    display: flex;
+    padding-top: 5vw;
+    justify-content: space-around;
+}
+
+.footer-pages {
+    width: 25vw;
+}
+
+.footer-div-title {
+    margin-bottom: 0.3vw;
+    font-size: 2vw;
+}
+
+.footer-pages-line {
+    width: 30%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 2vw;
+}
+
+.footer-div a{
+    color: white;
+    text-decoration: none;
+}
+.footer-div a p{
+    font-size: 1vw;
+    font-weight: 500;
+    margin-bottom: 0.5vw;
 }
