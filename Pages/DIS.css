@@ -260,6 +260,7 @@
     font-size: 1vw;
 }
 
+/* Quote Section */
 #DIS-quote {
     box-sizing: border-box;
     height: 20vw;
@@ -273,6 +274,7 @@
 .DIS-quote-ele {
     text-align: center;
     font-size: 3vw;
+    font-style: italic;
 }
 
 #empty {
