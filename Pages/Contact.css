@@ -1,0 +1,66 @@
+#Contact-header {
+    box-sizing: border-box;
+    background-color: #3e5c76;
+    padding: 5vw;
+}
+
+.Contact-header-title {
+    color: white;
+    margin-bottom: 2vw;
+    font-size: 2vw;
+}
+
+.Contact-header-para {
+    font-size: 3vw;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 3vw;
+}
+
+#Contact-header a {
+    text-decoration: none;
+}
+
+.main-link-item {
+    width: 12.5vw;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.main-link-item p {
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 900;
+}
+
+.main-link-kakao {
+    background-color: rgb(234, 210, 0);
+}
+
+.main-link-kakao p {
+    color: rgb(60,29,30);
+    font-size: 1vw;
+}
+
+.Contact-header-para-mini {
+    color: white;
+    font-size: 1vw;
+    margin-top: 1vw;
+}
+
+#Contact-tutors {
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+
+.Contact-tutors-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.Contact-tutors-container img {
+    width: 25vw;
+}
