@@ -126,11 +126,13 @@ a:has(h1.header-logo-text) {
     color: white;
     display: flex;
     padding-top: 5vw;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 10vw;
 }
 
-.footer-pages {
-    width: 25vw;
+.footer-div {
+    width: 20vw;
 }
 
 .footer-div-title {
@@ -138,18 +140,31 @@ a:has(h1.header-logo-text) {
     font-size: 2vw;
 }
 
-.footer-pages-line {
-    width: 30%;
+.footer-pages-line,
+.footer-contact-line,
+.footer-business-line {
     height: 2px;
     background-color: rgb(255, 255, 255);
     margin-bottom: 2vw;
+}
+
+.footer-pages-line {
+    width: 30%;
+}
+
+.footer-business-line {
+    width: 45%;
+}
+
+.footer-contact-line {
+    width: 45%;
 }
 
 .footer-div a{
     color: white;
     text-decoration: none;
 }
-.footer-div a p{
+.footer-div p{
     font-size: 1vw;
     font-weight: 500;
     margin-bottom: 0.5vw;
