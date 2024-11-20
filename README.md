@@ -7,3 +7,8 @@ Pages:
 - Daegu International School
 - Chadwick International School
 - Contact
+
+Used Languages:
+- HTML
+- CSS
+- javascript
