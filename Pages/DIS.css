@@ -7,49 +7,50 @@
     /*justify-content: center;*/
 }
 
-.DIS-title-box {
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    background-color: white;
-    padding: 2vw;
-    height: 8.5vw;
-    width: 60vw;
-    animation: 1s ease-out 0s 1 slideInFromLeft;
-}
 
 @keyframes slideInFromLeft {
     0% {
-      transform: translateX(-60%);
+      transform: translateX(-40vw);
     }
     100% {
       transform: translateX(0);
     }
   }
 
+.DIS-title-box {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 2vw;
+    height: 8.5vw;
+    width: 60vw;
+    animation: 1.2s ease-out 0s 1 slideInFromLeft;
+}
+
+
 .DIS-title-box-text {
-    font-family: "Poppins", sans-serif;
     font-weight: 500;
 }
 
 .DIS-title-box-deco {
     position: absolute;
-    top: 9.5vw;
-    left: 5vw;
+    z-index: 1;
+    top: 1vw;
+    left: 1vw;
     border: solid white 0.2vw;
     /*background-color: transparent;*/
     height: 8.5vw;
     width: 60vw;
-
-    animation: 1s ease-out 0s 1 slideInFromLeft;
 }
+
 
 /* Programs Section */
 
 #DIS-programs {
     display: flex;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
 }
 
 .DIS-programs-program {
@@ -77,7 +78,6 @@
 }
 
 .DIS-programs-program-title {
-    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 2.5vw;
     text-align: center;
@@ -107,7 +107,6 @@
 
 .DIS-strategy-title {
     box-sizing: content-box;
-    font-family: "Noto Sans KR", sans-serif;
     font-weight: 600;
     font-size: 4vw;
     margin-bottom: 1vw;
@@ -137,7 +136,6 @@
 
 .DIS-strategy-ele-title {
     text-align: center;
-    font-family: "Noto Sans KR", sans-serif;
     font-weight: 800;
     font-size: 1.7vw;
 }
@@ -150,7 +148,6 @@
     margin-top: 2vw;
     padding: 0 2vw;
     font-size: 1.4vw;
-    font-family: "Noto Sans KR", sans-serif;
 }
 
 /* Books Section */
@@ -199,7 +196,7 @@
     padding: 1vw;
     width: 18.5vw;
     height: 26vw;
-    font-size: 1.1vw;
+    font-size: 1vw;
     position:absolute;
     background-color: #B7ECEF;
     top:0;
