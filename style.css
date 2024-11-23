@@ -14,22 +14,25 @@
 #main {
     padding-top: 5%;
     padding-bottom: 3%;
-    background-color: rgb(240,240,240);
+    background-image: url(./Images/Main-Background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    color: white;
 }
 
 .main-title-text {
-    font-size: 3.5vw;
+    font-size: 4vw;
     text-align: center;
 }
 
 .main-title-text2 {
-    color: rgb(158,63,253);
+    color: var(--main-color);
 }
 
 .main-description {
-    color: gray;
     padding: 30px;
-    font-size: 2vw;
+    font-size: 2.5vw;
     text-align: center;
 }
 
@@ -49,46 +52,32 @@
     width: 12.5vw;
     text-align: center;
     border-radius: 25px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
 }
 
 .main-link-item p {
-    color: white;
     font-size: 1vw;
     padding-top: 15px;
     padding-bottom: 15px;
     font-weight: 900;
-}
-
-.main-link-kakao {
-    background-color: rgb(250,225,0);
-}
-
-.main-link-kakao p {
-    color: rgb(60,29,30);
-}
-
-.main-link-blog {
-    background-color: rgb(42,196,75);
     color: white;
 }
 
-.main-link-instagram {
-    background-color: rgb(196,145,247);
-    color: white;
-}
-
-.main-link-youtube {
-    background-color: rgb(247,0,0);
-    color: white;
-}
 
 /* Stats Section*/
 
 #stats {
-    margin-bottom: 100px;
+    padding-bottom: 5vw;
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: rgb(255, 255, 255);
+    background-image: url(./Images/Acceptance-Background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
 }
 
 .stats-title {
@@ -122,7 +111,7 @@
 .stats-item-line {
     width: 100%;
     height: 3px;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     margin-bottom: 1.5vw;
 }
 
@@ -133,8 +122,16 @@
 /* Why EduGate Section */
 
 #why {
-    padding-top: 10px;
-    padding-bottom: 50px;
+    margin-bottom: 10vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 31vw;
+}
+
+.why-title {
+    margin-top: 8vw;
 }
 
 .why-container {
@@ -147,6 +144,14 @@
     display: flex;
     flex-direction: column;
     width: 30vw;
+    border-radius: 25px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(72, 72, 72);
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
 }
 
 .why-element img {
@@ -181,7 +186,7 @@
     position: relative;
     border: solid 1px rgb(182, 181, 181);
     border-radius: 10px;
-    padding: 30px;
+    padding: 2vw;
     width: 20vw;
 }
 

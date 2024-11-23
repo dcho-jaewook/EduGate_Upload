@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Nanum Gothic", sans-serif;
+    font-family: "Noto Sans KR", serif;
     box-sizing: border-box;
 }
 
@@ -168,4 +168,7 @@ a:has(h1.header-logo-text) {
     font-size: 1vw;
     font-weight: 500;
     margin-bottom: 0.5vw;
+}
+.footer-div:not(:nth-of-type(2)) p:hover {
+    text-decoration: underline;
 }
