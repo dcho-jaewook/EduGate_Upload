@@ -57,6 +57,37 @@
     border-color: white;
 }
 
+.main-link-item:hover {
+    animation-name: color;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.main-link-item:not(:hover) {
+    animation-name: color-rev;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes color {
+    0% {
+        background-color: transparent;
+    }
+
+    100% {
+        background-color: var(--main-color);
+    }
+}
+@keyframes color-rev {
+    0% {
+        background-color: var(--main-color);
+    }
+
+    100% {
+        background-color: transparent;
+    }
+}
+
 .main-link-item p {
     font-size: 1vw;
     padding-top: 15px;
@@ -152,11 +183,15 @@
     padding-bottom: 2vw;
     padding-left: 0.5vw;
     padding-right: 0.5vw;
+    animation-name: color-why-rev;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 }
 
-.why-element img {
-    align-self: center;
-    width: 80%;
+.why-element:hover {
+    animation-name: color-why;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 }
 
 .why-element-title {
@@ -168,6 +203,33 @@
 .why-element-para {
     padding: 0 20px;
     font-size: 1.1vw;
+}
+
+@keyframes color-why {
+    0% {
+        background-color: transparent;
+        color: black;
+        border-color: black;
+    }
+
+    100% {
+        background-color: var(--main-color);
+        color: white;
+        border-color: rgb(170, 170, 170);
+    }
+}
+@keyframes color-why-rev {
+    0% {
+        background-color: var(--main-color);
+        color: white;
+        border-color: rgb(170, 170, 170);
+    }
+
+    100% {
+        background-color: transparent;
+        color: black;
+        border-color: black;
+    }
 }
 
 /* Review Section */
