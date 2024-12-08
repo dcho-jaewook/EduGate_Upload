@@ -317,7 +317,7 @@
     margin: 20px auto 0;
     padding: 10px 20px;
     font-size: 1.2rem;
-    background-color: #ff5f5f;
+    background-color: #969595;
     color: white;
     border: none;
     border-radius: 5px;
@@ -325,7 +325,7 @@
 }
 
 .popup-close-btn:hover {
-    background-color: #e05555;
+    background-color: #686868;
 }
 
 /* 닫기 버튼 스타일 */
@@ -335,9 +335,9 @@
     right: 20px;
     font-size: 2rem;
     cursor: pointer;
-    color: #333;
+    color: #969595;
 }
 
 .close:hover {
-    color: #ff5f5f;
+    color: #0c0c0c;
 }
