@@ -280,3 +280,64 @@
     right: 0.1vw;
     width: 4vw;
 }
+
+/* popup */
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    display: none; /* 초기에는 숨김 */
+}
+
+.popup-content {
+    position: relative;
+    width: 80vw;
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.popup-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.popup-close-btn {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #ff5f5f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-close-btn:hover {
+    background-color: #e05555;
+}
+
+/* 닫기 버튼 스타일 */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #333;
+}
+
+.close:hover {
+    color: #ff5f5f;
+}
