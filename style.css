@@ -296,6 +296,24 @@
     display: none; /* 초기에는 숨김 */
 }
 
+.popup-content-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.popup-kakao {
+    background-color: #FEE501;
+}
+
+.popup-kakao a {
+    text-decoration: none;
+    color: black;
+}
+
+.popup-kakao:hover {
+    background-color: #d9c300;
+}
+
 .popup-content {
     position: relative;
     width: 50vw;
@@ -312,19 +330,23 @@
     border-radius: 10px;
 }
 
+.popup-close {
+    background-color: #969595;
+    color: white;
+    font-family: "Noto Sans KR", serif;
+}
+
 .popup-close-btn {
     display: block;
     margin: 20px auto 0;
-    padding: 10px 20px;
-    font-size: min(2vw, 15px);
-    background-color: #969595;
-    color: white;
+    padding: 0.7vw 1.4vw;
+    font-size: min(2.3vw, 20px);
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.popup-close-btn:hover {
+.popup-close:hover {
     background-color: #686868;
 }
 
