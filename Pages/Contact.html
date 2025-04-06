@@ -53,7 +53,7 @@
                     <span class="platform">EduGate</span>
                     <h2 class="tutor-name"></h2>
                     <p class="tutor-title"></p>
-                    <img src="../Images/Tutor Profiles/tutor-image-icon.png" alt="EduGate 교사진" class="tutor-image">
+                    <img src="" alt="EduGate 교사진" class="tutor-image">
                 </div>
                 <div class="tutor-details">
                     <ul class="tutor-info-list">
@@ -99,56 +99,64 @@
             title: "대표 원장",
             university: "University of California, Berkeley",
             degree: "Biology BA & Economics BA",
-            specialty: "DIS·Chadwick 입시 컨설팅"
+            specialty: "DIS·Chadwick 입시 컨설팅",
+            gender: "M"
         },
         {
             name: "S.Chae",
             title: "대표 원장",
             university: "Emory University",
             degree: "Business Administration BBA",
-            specialty: "DIS·Chadwick 입시 컨설팅"
+            specialty: "DIS·Chadwick 입시 컨설팅",
+            gender: "M"
         },
         {
             name: "J.Cho",
             title: "대표 컨설턴트",
             university: "University of California, Los Angeles",
             degree: "Mathematics of Computation BS",
-            specialty: "DIS 입시 컨설팅"
+            specialty: "DIS 입시 컨설팅",
+            gender: "M"
         },
         {
             name: "H.Jang",
             title: "대표 컨설턴트",
             university: "Emory University",
             degree: "Biology BA",
-            specialty: "Chadwick 입시 컨설팅"
+            specialty: "Chadwick 입시 컨설팅",
+            gender: "M"
         },
         {
             name: "C.Park",
             title: "수석 컨설턴트",
             university: "Rhode Island School of Design (RISD)",
             degree: "Fine Arts BA",
-            specialty: "DIS 입시 컨설팅"
+            specialty: "DIS 입시 컨설팅",
+            gender: "F"
         },
         {
             name: "N.Woo",
             title: "정규 컨설턴트",
             university: "Carnegie Mellon University",
             degree: "Physics BS",
-            specialty: "DIS 입시 컨설팅"
+            specialty: "DIS 입시 컨설팅",
+            gender: "F"
         },
         {
             name: "R.Kim",
             title: "정규 컨설턴트",
             university: "대구경북과학기술원 (DGIST)",
             degree: "Biology BS",
-            specialty: "DIS 입시 컨설팅"
+            specialty: "DIS 입시 컨설팅",
+            gender: "F"
         },
         {
             name: "G.Shim",
             title: "정규 컨설턴트",
             university: "New York University",
             degree: "Biology BA",
-            specialty: "DIS 입시 컨설팅"
+            specialty: "DIS 입시 컨설팅",
+            gender: "M"
         }
     ];
 
@@ -167,6 +175,12 @@
         clone.querySelector(".degree").textContent = `· ${tutor.degree}`;
         clone.querySelector(".specialty").textContent = `· 전문영역: ${tutor.specialty}`;
 
+        // 성별에 따라 이미지 설정
+        const tutorImage = clone.querySelector(".tutor-image");
+        tutorImage.src = tutor.gender === "M" 
+            ? "../Images/Tutor Profiles/tutor-image-icon.png"
+            : "../Images/Tutor Profiles/woman-person-icon.png";
+            
         // 컨테이너에 추가
         container.appendChild(clone);
     });
