@@ -42,13 +42,28 @@
     </section>
 
     <section id="Contact-tutors">
-        <div class="Contact-tutors-container">
-            <img src="../Images/Tutor Profiles/Profile-1.png" alt="EduGate 대구 국제학교 (DIS) 채드윅 국제학교 (Chadwick) 입시 교사">
-            <img src="../Images/Tutor Profiles/Profile-2.png" alt="EduGate 대구 국제학교 (DIS) 채드윅 국제학교 (Chadwick) 입시 교사">
-            <img src="../Images/Tutor Profiles/Profile-3.png" alt="EduGate 대구 국제학교 (DIS) 채드윅 국제학교 (Chadwick) 입시 교사">
-            <img src="../Images/Tutor Profiles/Profile-4.png" alt="EduGate 대구 국제학교 (DIS) 채드윅 국제학교 (Chadwick) 입시 교사">
-            <img src="../Images/Tutor Profiles/Profile-5.png" alt="EduGate 대구 국제학교 (DIS) 채드윅 국제학교 (Chadwick) 입시 교사">
+        <div class="Contact-tutors-container" id="tutors-container">
+            <!-- 동적으로 교사 카드가 추가될 곳 -->
         </div>
+    
+        <!-- 교사 프로필 템플릿 -->
+        <template id="tutor-card-template">
+            <div class="tutor-card">
+                <div class="tutor-header">
+                    <span class="platform">EduGate</span>
+                    <h2 class="tutor-name"></h2>
+                    <p class="tutor-title"></p>
+                    <img src="../Images/Tutor Profiles/tutor-image-icon.png" alt="EduGate 교사진" class="tutor-image">
+                </div>
+                <div class="tutor-details">
+                    <ul class="tutor-info-list">
+                        <li class="university"></li>
+                        <li class="degree"></li>
+                        <li class="specialty"></li>
+                    </ul>
+                </div>
+            </div>
+        </template>
     </section>
     
     <section id="footer">
@@ -76,3 +91,83 @@
     </section>
 </body>
 </html>
+
+<script>
+    const tutors = [
+        {
+            name: "S.Lee",
+            title: "대표 원장",
+            university: "University of California, Berkeley",
+            degree: "Biology BA & Economics BA",
+            specialty: "DIS·Chadwick 입시 컨설팅"
+        },
+        {
+            name: "S.Chae",
+            title: "대표 원장",
+            university: "Emory University",
+            degree: "Business Administration BBA",
+            specialty: "DIS·Chadwick 입시 컨설팅"
+        },
+        {
+            name: "J.Cho",
+            title: "대표 컨설턴트",
+            university: "University of California, Los Angeles",
+            degree: "Mathematics of Computation BS",
+            specialty: "DIS 입시 컨설팅"
+        },
+        {
+            name: "H.Jang",
+            title: "대표 컨설턴트",
+            university: "Emory University",
+            degree: "Biology BA",
+            specialty: "Chadwick 입시 컨설팅"
+        },
+        {
+            name: "C.Park",
+            title: "수석 컨설턴트",
+            university: "Rhode Island School of Design (RISD)",
+            degree: "Fine Arts BA",
+            specialty: "DIS 입시 컨설팅"
+        },
+        {
+            name: "N.Woo",
+            title: "정규 컨설턴트",
+            university: "Carnegie Mellon University",
+            degree: "Physics BS",
+            specialty: "DIS 입시 컨설팅"
+        },
+        {
+            name: "R.Kim",
+            title: "정규 컨설턴트",
+            university: "대구경북과학기술원 (DGIST)",
+            degree: "Biology BS",
+            specialty: "DIS 입시 컨설팅"
+        },
+        {
+            name: "G.Shim",
+            title: "정규 컨설턴트",
+            university: "New York University",
+            degree: "Biology BA",
+            specialty: "DIS 입시 컨설팅"
+        }
+    ];
+
+    // 템플릿을 사용해 동적으로 카드 생성
+    const container = document.getElementById("tutors-container");
+    const template = document.getElementById("tutor-card-template");
+
+    tutors.forEach(tutor => {
+        // 템플릿 복제
+        const clone = document.importNode(template.content, true);
+
+        // 데이터 삽입
+        clone.querySelector(".tutor-name").textContent = tutor.name;
+        clone.querySelector(".tutor-title").textContent = tutor.title;
+        clone.querySelector(".university").textContent = `· ${tutor.university}`;
+        clone.querySelector(".degree").textContent = `· ${tutor.degree}`;
+        clone.querySelector(".specialty").textContent = `· 전문영역: ${tutor.specialty}`;
+
+        // 컨테이너에 추가
+        container.appendChild(clone);
+    });
+</script>
