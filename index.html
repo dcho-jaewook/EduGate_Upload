@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./Images/Logo.png">
     <script src="./app.js"></script>
+    <script src="./components/loadComponent.js"></script>
 </head>
 <body>
     <div id="popup" class="popup-container">
@@ -36,20 +37,8 @@
         </div>
     </div>
     
-    <section id="header" class="show">
-        <div class="header-logo">
-            <a href="https://www.edugate-kr.com"><h1 class="header-logo-text">EduGate</h1></a>
-        </div>
-        <div class="header-menu">
-            <a href="https://www.edugate-kr.com" class="header-menu-ele header-menu-Home">Home</a>
-            <a href="https://www.edugate-kr.com/Pages/DIS" class="header-menu-ele header-menu-DIS">DIS 입시</a>
-            <a href="https://www.edugate-kr.com/Pages/Chadwick" class="header-menu-ele header-menu-Chadwick">Chadwick 입시</a>
-            <a href="https://www.edugate-kr.com/Pages/Consulting" class="header-menu-ele header-menu-College">미국 대학 컨설팅</a>
-            <a href="https://www.edugate-kr.com/Pages/SAT" class="header-menu-ele header-menu-SAT">SAT</a>
-            <a href="https://www.edugate-kr.com/Pages/Med" class="header-menu-ele header-menu-Med">치/의대 보장 프로그램</a>
-            <a href="https://www.edugate-kr.com/Pages/Contact" class="header-menu-ele header-menu-Contact">상담신청</a>
-        </div>
-    </section>
+    <section id="header" class="show"></section>
+    
     <section id="main">
         <div class="main-title">
             <h1 class="main-title-text">EduGate와 함께 <span class="main-title-text2">새로운 시각으로</span> 입시를 열다</h1>
@@ -81,7 +70,7 @@
             <div class="why-element">
                 <h1 class="why-element-title">체계적인 준비 및 전략 수립</h1>
                 <p class="why-element-para">불합격에 가까운 합격의 문을 열기 위해선,
-                </br>학생만의 ‘대체불가한 입학 로드맵'은 필수입니다.</br></br>
+                </br>학생만의 '대체불가한 입학 로드맵'은 필수입니다.</br></br>
                     에듀게이트는 학생의 관심사, 성장배경, 업적 등을 기반으로 국제학교들이 추구하는 모든 방면에서 완벽한 합격 후보로 양성하는 커리큘럼을 제공합니다.</p>
             </div>
         </div>
@@ -104,79 +93,82 @@
     </section>
     <section id="review">
         <h1 class="review-title section-title">EduGate 수강후기</h1>
-        <div class="review-collection">
+        <div class="review-collection" id="review-container">
+            <!-- Reviews will be dynamically added here -->
+        </div>
+
+        <!-- Review box template -->
+        <template id="review-box-template">
             <div class="review-box">
                 <h2 class="review-box-title">
-                    DIS 입시 프로그램</br>
-                    <span style="font-size: 1vw">김OO | 2024</span>
+                    <span class="program-name"></span></br>
+                    <span class="reviewer-info"></span>
                 </h2>
-                <p class="review-box-content">
-                    “에듀게이트 대표원장님과 15분 전화상담을 했을 뿐인데, 이렇게나 많은 입학 정보를 알려주실지 몰랐습니다.<br><br>
-                    몇달을 걸쳐 지인, DIS 입학처, 인터넷을 통해 입학 관련 정보를 하나하나 수집했는데, 원장님의 정보력 하나는 업계 최고인 듯 하네요.<br><br>
-                    호기심에 아이와 레벨 테스트를 한번 보러 갔는데, 아이의 스타일까지 완벽하게 파악, 합격까지 필요한 완벽한 로드맵을 내실지는 상상도 못 했습니다.”
-                </p>
-                <img src="./Images/DIS Logo.svg" alt="DIS 대구 국제학교 입시 입학 로고">
+                <p class="review-box-content"></p>
+                <img src="" alt="" class="review-logo">
             </div>
-            <div class="review-box">
-                <h2 class="review-box-title">
-                    DIS 입시 프로그램</br>
-                    <span style="font-size: 1vw">박OO | 2024</span>
-                </h2>
-                <p class="review-box-content">
-                    “딸아이가 한국교육과는 전혀 맞는거 같지 않아, 한번 시도나 해볼겸 에듀게이트를 통해 DIS 입학을 준비했습니다.<br><br>
-                    정확히 선생님들과 함께한지 3개월 만에 딸아이가 합격 이메일을 보여주더라고요. 정말 놀랐습니다.<br><br>
-                    에듀게이트와 함께하며 우리 딸아이가 정말 많이 변했고, 목적성을 가지고 살기 시작했네요. 지금은 당당하게 탑20 미국대학을 다니는 딸아이를 가진 엄마입니다.”
-                </p>
-                <img src="./Images/DIS Logo.svg" alt="DIS 대구 국제학교 입시 입학 로고">
-            </div>
-            <div class="review-box">
-                <h2 class="review-box-title">
-                    Chadwick 프로그램</br>
-                    <span style="font-size: 1vw">최OO | 2024</span>
-                </h2>
-                <p class="review-box-content">
-                    “채드윅 입학이 워낙에 어렵다는 소식을 듣고 정보를 찾다보니 EduGate와 연이 닿게 되었습니다.<br><br>
+        </template>
+
+        <script>
+            const reviews = [
+                {
+                    program: "DIS 입시 프로그램",
+                    reviewer: "조OO | 2025",
+                    content: `"DIS에 아이를 합격시킨 지인분의 추천을 통해 에듀게이트를 알게 되었고, 첫 상담에 확신이 생겼습니다.<br><br>
+                    몇달을 걸쳐 지인, DIS 입학처, 인터넷을 통해 입학 관련 정보를 하나하나 수집했는데, 30분의 상담만으로 모든 정보를 알려주시더라구요.<br><br>
+                    세심하고 질 높은 컨설팅 및 교육프로그램과 훌륭한 선생님들 덕분에 좋은 결과 받을 수 있었습니다.<br><br>
+                    <span style="font-weight: bold;">추천 및 학원 등록 의사 200%</span>"`,
+                    logo: "./Images/DIS Logo.svg",
+                    logoAlt: "DIS 대구 국제학교 입시 입학 로고"
+                },
+                {
+                    program: "DIS 입시 프로그램",
+                    reviewer: "박OO | 2025",
+                    content: `"딸아이 수업을 참관 해보니 DIS 입학 시험 <span style="font-weight: bold;">컨설팅</span>이 왜 필요한지 알게 되었습니다.<br><br>
+                    단순 영어 수업이 아니라, 인터뷰에서 어떤 내용을 얘기할 지, 아이의 강점을 어떻게 어필할 지 등등 세심한 컨설팅을 통해 완벽한 준비를 시켜주시더라구요.<br><br>
+                    에듀게이트와 함께하며 DIS 합격이라는 좋은 결과를 얻을 수 있었습니다"`,
+                    logo: "./Images/DIS Logo.svg",
+                    logoAlt: "DIS 대구 국제학교 입시 입학 로고"
+                },
+                {
+                    program: "Chadwick 프로그램",
+                    reviewer: "최OO | 2024",
+                    content: `"채드윅 입학이 워낙에 어렵다는 소식을 듣고 정보를 찾다보니 EduGate와 연이 닿게 되었습니다.<br><br>
                     상담과 레벨테스트를 통해 아이가 어느 부분이 부족한지 알게 되었고, 매 수업 이후 꼼꼼한 피드팩을 보니 믿음이 가더라고요.<br><br>
-                    그 믿음에 보답이라도 하듯, 아이가 정확이 5개월 뒤 채드윅 입학에 성공하였습니다. 정말 EduGate 없이는 불가능했다고 생각이 드네요.”
-                </p>
-                <img src="./Images/Chadwick Logo.png" alt="Chadwick 채드윅 국제학교 입시 입학 로고">
-            </div>
-            <div class="review-box">
-                <h2 class="review-box-title">
-                    Chadwick 프로그램</br>
-                    <span style="font-size: 1vw">박OO | 2024</span>
-                </h2>
-                <p class="review-box-content">
-                    “에듀게이트 프로그램을 통해 아이가 자기주도적으로 공부하는 법을 배우고, 덕분에 채드윅 입학이라는 믿기지 않는 결과가 되어 돌아오더라고요.<br><br>
+                    그 믿음에 보답이라도 하듯, 아이가 정확이 5개월 뒤 채드윅 입학에 성공하였습니다. 정말 EduGate 없이는 불가능했다고 생각이 드네요."`,
+                    logo: "./Images/Chadwick Logo.png",
+                    logoAlt: "Chadwick 채드윅 국제학교 입시 입학 로고"
+                },
+                {
+                    program: "Chadwick 프로그램",
+                    reviewer: "박OO | 2024",
+                    content: `"에듀게이트 프로그램을 통해 아이가 자기주도적으로 공부하는 법을 배우고, 덕분에 채드윅 입학이라는 믿기지 않는 결과가 되어 돌아오더라고요.<br><br>
                     단순히 "영어"를 가르치는 것이 아니라 "공부하는 법"을 가르쳐 주셔서 정말 많은 것이 실시간으로 바뀌는 것을 볼 수 있더라고요.<br><br>
-                    에듀게이트의 세심한 관리와 개별 맞춤형 교육 덕분에 입학 후에도 아이가 학교에 잘 적응할 수 있을 거란 믿음이 생겼어요.”
-                </p>
-                <img src="./Images/Chadwick Logo.png" alt="Chadwick 채드윅 국제학교 입시 입학 로고">
-            </div>
-        </div>
+                    에듀게이트의 세심한 관리와 개별 맞춤형 교육 덕분에 입학 후에도 아이가 학교에 잘 적응할 수 있을 거란 믿음이 생겼어요."`,
+                    logo: "./Images/Chadwick Logo.png",
+                    logoAlt: "Chadwick 채드윅 국제학교 입시 입학 로고"
+                }
+            ];
+
+            // Generate review boxes
+            const reviewContainer = document.getElementById("review-container");
+            const reviewTemplate = document.getElementById("review-box-template");
+
+            reviews.forEach(review => {
+                const clone = document.importNode(reviewTemplate.content, true);
+                
+                clone.querySelector(".program-name").textContent = review.program;
+                clone.querySelector(".reviewer-info").textContent = review.reviewer;
+                clone.querySelector(".review-box-content").innerHTML = review.content;
+                
+                const logoImg = clone.querySelector(".review-logo");
+                logoImg.src = review.logo;
+                logoImg.alt = review.logoAlt;
+                
+                reviewContainer.appendChild(clone);
+            });
+        </script>
     </section>
-    <section id="footer">
-        <div class="footer-pages footer-div">
-            <h1 class="footer-pages-title footer-div-title">Pages</h1>
-            <div class="footer-pages-line"></div>
-            <a href="./Pages/DIS.html" target="_blank"><p class="footer-pages-para footer-div-para">DIS 입시</p></a>
-            <a href="./Pages/Chadwick.html" target="_blank"><p class="footer-pages-para footer-div-para">Chadwick (채드윅) 입시</p></a>
-            <a href="./Pages/Contact.html" target="_blank"><p class="footer-pages-para footer-div-para">Contact Us</p></a>
-        </div>
-        <div class="footer-business footer-div">
-            <h1 class="footer-business-title footer-div-title">Business</h1>
-            <div class="footer-business-line"></div>
-            <p class="footer-business-para footer-div-para">상호: 에듀게이트 코리아</p>
-            <p class="footer-business-para footer-div-para">사업자 등록번호: 396-13-02345</p>
-        </div>
-        <div class="footer-contact footer-div">
-            <h1 class="footer-conatct-title footer-div-title">Contact</h1>
-            <div class="footer-contact-line"></div>
-            <a href="https://pf.kakao.com/_VxdJHG" target="_blank"><p>카카오 채널</p></a>
-            <a href="https://blog.naver.com/edugate-daegu" target="_blank"><p>네이버 블로그</p></a>
-            <a href="https://instagram.com/edugate_edu/" target="_blank"><p>Instagram</p></a>
-            <a href="https://www.youtube.com/@edugatekorea" target="_blank"><p>YouTube</p></a>
-        </div>
-    </section>
+    <section id="footer"></section>
 </body>
 </html>
