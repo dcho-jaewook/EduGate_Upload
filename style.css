@@ -392,7 +392,7 @@
 }
 
 .popup-close {
-    background-color: #f5f5f5;
+    background-color: #d7d7d7;
     color: #666;
     font-family: "Noto Sans KR", serif;
     transition: all 0.3s ease;
@@ -412,7 +412,7 @@
 }
 
 .popup-close:hover {
-    background-color: #e0e0e0;
+    background-color: #a6a6a6;
     transform: translateY(-2px);
 }
 
