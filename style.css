@@ -364,7 +364,6 @@
 .popup-content {
     position: relative;
     width: 50vw;
-    max-width: 600px;
     padding: 2.5vw;
     background-color: white;
     border-radius: 15px;
