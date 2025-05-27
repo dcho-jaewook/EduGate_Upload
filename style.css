@@ -283,14 +283,20 @@
 
 /* popup */
 .popup-title {
-    font-size: calc(12px + 0.8vw);
-    font-weight: 500;
+    font-size: calc(14px + 0.8vw);
+    font-weight: 600;
     text-align: left;
     margin-bottom: 1.5vw;
+    color: #333;
+    line-height: 1.4;
 }
 
 .popup-para {
     text-align: left;
+    font-size: calc(12px + 0.4vw);
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 2vw;
 }
 
 .popup-container {
@@ -299,93 +305,136 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.75);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    display: none; /* 초기에는 숨김 */
+    display: none;
+    backdrop-filter: blur(5px);
 }
 
 .popup-content-buttons {
     display: flex;
     justify-content: space-around;
+    gap: 15px;
+    margin-top: 2vw;
 }
 
 .popup-kakao {
     background-color: #FEE501;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .popup-kakao a {
     text-decoration: none;
-    color: black;
-    font-weight: bold;
+    color: #000;
+    font-weight: 600;
+    font-size: calc(11px + 0.3vw);
+    padding: 0 15px;
 }
 
 .popup-form {
     background-color: #9272ca;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .popup-form:hover {
-    background-color: #713ccc;
+    background-color: #7d5db3;
+    transform: translateY(-2px);
 }
 
 .popup-form a {
     text-decoration: none;
     color: white;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: calc(11px + 0.3vw);
+    padding: 0 15px;
 }
 
 .popup-kakao:hover {
     background-color: #e6cf01;
+    transform: translateY(-2px);
 }
 
 .popup-content {
     position: relative;
     width: 50vw;
     max-width: 600px;
-    padding: 20px;
+    padding: 2.5vw;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 15px;
     text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    animation: popupFadeIn 0.3s ease-out;
+}
+
+@keyframes popupFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .popup-img {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    margin-bottom: 1.5vw;
 }
 
 .popup-close {
-    background-color: #969595;
-    color: white;
+    background-color: #f5f5f5;
+    color: #666;
     font-family: "Noto Sans KR", serif;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .popup-close-btn {
     display: block;
-    margin: 20px auto 0;
-    padding: calc(10px + 0.1vw) calc(20px + 0.2vw);
-    font-size: minmax(min(1.5vw, 30px), 50px);
+    margin: 0;
+    padding: calc(8px + 0.1vw) calc(15px + 0.2vw);
+    font-size: calc(11px + 0.3vw);
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .popup-close:hover {
-    background-color: #686868;
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
 }
 
 /* 닫기 버튼 스타일 */
 .close {
     position: absolute;
-    top: 10px;
+    top: 15px;
     right: 20px;
-    font-size: 2rem;
+    font-size: 1.8rem;
     cursor: pointer;
-    color: #969595;
+    color: #999;
+    transition: all 0.3s ease;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
 }
 
 .close:hover {
-    color: #0c0c0c;
+    color: #333;
+    background-color: #f5f5f5;
+    transform: rotate(90deg);
 }
