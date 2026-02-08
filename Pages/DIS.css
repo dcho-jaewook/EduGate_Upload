@@ -1,7 +1,7 @@
 #DIS-title {
     font-size: 2.5vw;
     padding: 4vw;
-    background-color: #416B9A;
+    background-color: #ed7272;
     display: flex;
     align-items: center;
     /*justify-content: center;*/
@@ -120,15 +120,15 @@
 }
 
 .DIS-strategy-container .DIS-strategy-ele:nth-child(1) {
-    background-color: #80a9dbb1;
+    background-color: #ed7272;
 }
 
 .DIS-strategy-container .DIS-strategy-ele:nth-child(2) {
-    background-color: #94bae873;
+    background-color: #ed7272c8;
 }
 
 .DIS-strategy-container .DIS-strategy-ele:nth-child(3) {
-    background-color: #b2c8e45f;
+    background-color: #ed727279;
 }
 
 .DIS-strategy-ele {
@@ -155,7 +155,8 @@
 /* Books Section */
 #DIS-books {
     padding-top: 5vw;
-    margin-bottom: 10vw;
+    padding-bottom: 5vw;
+    margin-bottom: 0vw;
 }
 
 .DIS-books-text {
@@ -225,8 +226,11 @@
 
 /* Blog Section */
 #DIS-blog {
+    padding-top: 7vw;
+    padding-bottom: 8vw;
     padding-left: 3vw;
     padding-right: 3vw;
+    background-color: #ed72724a;
 }
 
 .DIS-blog-title {
