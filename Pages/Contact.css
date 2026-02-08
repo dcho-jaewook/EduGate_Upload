@@ -1,6 +1,6 @@
 #Contact-header {
     box-sizing: border-box;
-    background-color: #3e5c76;
+    background-color: #ff3737;
     padding: 5vw;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .main-link-kakao {
-    background-color: rgb(234, 210, 0);
+    background-color: rgb(255, 230, 0);
 }
 
 .main-link-kakao p {
