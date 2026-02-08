@@ -32,6 +32,8 @@
 
 .DIS-title-box-text {
     font-weight: 500;
+    font-size: 4vw;
+    white-space: nowrap;
 }
 
 .DIS-title-box-deco {
@@ -254,7 +256,7 @@
     text-decoration: underline;
     color: black;
     margin-top: 1vw;
-    font-size: 1vw;
+    font-size: min(1vw, 15px);
 }
 
 /* Quote Section */

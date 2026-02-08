@@ -360,7 +360,6 @@
     object-fit: contain;
     display: block;
     margin: 0;
-    vertical-align: top;
 }
 
 /* 닫기 버튼 스타일 */
