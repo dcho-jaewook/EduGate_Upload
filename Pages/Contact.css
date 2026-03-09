@@ -143,3 +143,101 @@
     color: #333;
     margin-bottom: 10px;
 }
+
+/* SNS Channel Section */
+#Contact-sns {
+    padding: 4vw 5vw 5vw;
+    background-color: #f5f7fb;
+}
+
+.Contact-sns-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Contact-sns-title {
+    font-size: 2.5vw;
+    margin-bottom: 1vw;
+    color: #003157;
+}
+
+.Contact-sns-subtitle {
+    font-size: 1.5vw;
+    color: #555;
+    margin-bottom: 2.5vw;
+}
+
+.Contact-sns-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2vw;
+}
+
+.sns-link-container {
+    height: calc(20rem+5vw);
+    width: calc(20rem+5vw);
+    box-sizing: border-box;
+}
+
+.sns-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw 1.5vw;
+    border-radius: 999px;
+    font-size: 2vw;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    background-color: #777;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: background-color 0.25s ease, color 0.25s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sns-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.14);
+}
+
+.sns-youtube {
+    background-color: #ff4b4b;
+}
+
+.sns-youtube:hover {
+    background-color: #e00000;
+}
+
+.sns-blog {
+    background-color: #02c75a;
+    color: #003817;
+}
+
+.sns-blog:hover {
+    background-color: #00a648;
+    color: #ffffff;
+}
+
+.sns-instagram {
+    background-color: #c13584;
+}
+
+.sns-instagram:hover {
+    background-color: #96235f;
+}
+
+.sns-kakao {
+    background-color: #fee500;
+    color: #3c1e1e;
+}
+
+.sns-kakao:hover {
+    background-color: #f3c800;
+    color: #2b1616;
+}
+
+.sns-icon {
+    width: 2vw;
+    height: 2vw;
+}
