@@ -1,6 +1,6 @@
 Official EduGate Website
 
-Link to Website: https://edugate-kr.com/
+Link to Website: https://topchoiceacademy-kr.com
 
 Pages:
 - Home
