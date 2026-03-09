@@ -234,9 +234,16 @@
 
 /* Review Section */
 #review {
+    background-color: #003157;
     padding-left: 5vw;
     padding-right: 5vw;
-    margin-bottom: 100px;
+    padding-bottom: 100px;
+}
+
+.review-title {
+    color: white;
+    margin-top: 0;
+    padding-top: 5vw;
 }
 
 .review-collection {
@@ -247,6 +254,7 @@
 .review-box {
     position: relative;
     border: solid 1px rgb(182, 181, 181);
+    background-color: white;
     border-radius: 10px;
     padding: 2vw;
     width: 20vw;
@@ -263,6 +271,7 @@
 
 .review-box-content {
     font-size: 1vw;
+    font-style: italic;
 }
 
 .review-box:nth-of-type(1) img,
@@ -314,62 +323,17 @@
     backdrop-filter: blur(5px);
 }
 
-.popup-content-buttons {
-    display: flex;
-    justify-content: space-around;
-    gap: 15px;
-    margin-top: 2vw;
-}
-
-.popup-kakao {
-    background-color: #FEE501;
-    transition: all 0.3s ease;
-    border: none;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.popup-kakao a {
-    text-decoration: none;
-    color: #000;
-    font-weight: 600;
-    font-size: calc(11px + 0.3vw);
-    padding: 0 15px;
-}
-
-.popup-form {
-    background-color: #9272ca;
-    transition: all 0.3s ease;
-    border: none;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.popup-form:hover {
-    background-color: #7d5db3;
-    transform: translateY(-2px);
-}
-
-.popup-form a {
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    font-size: calc(11px + 0.3vw);
-    padding: 0 15px;
-}
-
-.popup-kakao:hover {
-    background-color: #e6cf01;
-    transform: translateY(-2px);
-}
-
 .popup-content {
     position: relative;
-    width: 50vw;
-    padding: 2.5vw;
+    width: fit-content;
+    max-width: 85vw;
+    max-height: 75vh;
+    padding: 0;
     background-color: white;
-    border-radius: 15px;
     text-align: center;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     animation: popupFadeIn 0.3s ease-out;
+    overflow: hidden;
 }
 
 @keyframes popupFadeIn {
@@ -383,36 +347,19 @@
     }
 }
 
+.popup-content a {
+    display: block;
+    line-height: 0;
+}
+
 .popup-img {
-    width: 100%;
+    max-width: 85vw;
+    max-height: 75vh;
+    width: auto;
     height: auto;
-    border-radius: 10px;
-    margin-bottom: 1.5vw;
-}
-
-.popup-close {
-    background-color: #d7d7d7;
-    color: #666;
-    font-family: "Noto Sans KR", serif;
-    transition: all 0.3s ease;
-    border: none;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.popup-close-btn {
+    object-fit: contain;
     display: block;
     margin: 0;
-    padding: calc(8px + 0.1vw) calc(15px + 0.2vw);
-    font-size: calc(11px + 0.3vw);
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.popup-close:hover {
-    background-color: #a6a6a6;
-    transform: translateY(-2px);
 }
 
 /* 닫기 버튼 스타일 */
@@ -423,17 +370,14 @@
     font-size: 1.8rem;
     cursor: pointer;
     color: #999;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
     width: 30px;
     height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
 }
 
 .close:hover {
     color: #333;
-    background-color: #f5f5f5;
-    transform: rotate(90deg);
 }

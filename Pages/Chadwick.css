@@ -1,7 +1,7 @@
 #Chadwick-title {
     font-size: 2.5vw;
     padding: 4vw;
-    background-color: #012B55;
+    background-color: #d03a3a;
     display: flex;
     align-items: center;
     /*justify-content: center;*/
@@ -29,7 +29,9 @@
 }
 
 .Chadwick-title-box-text {
-    font-weight: 500;
+  font-weight: 500;
+  font-size: 3.8vw;
+  white-space: nowrap;
 }
 
 .Chadwick-title-box-deco {
@@ -104,15 +106,15 @@
 }
 
 .Chadwick-strategy-container .Chadwick-strategy-ele:nth-child(1) {
-  background-color: #80a9dbb1;
+  background-color: #ed7272;
 }
 
 .Chadwick-strategy-container .Chadwick-strategy-ele:nth-child(2) {
-  background-color: #94bae873;
+  background-color: #ed7272c8;
 }
 
 .Chadwick-strategy-container .Chadwick-strategy-ele:nth-child(3) {
-  background-color: #b2c8e45f;
+  background-color: #ed727279;
 }
 
 .Chadwick-strategy-ele {
@@ -209,8 +211,11 @@
 
 /* Blog Section */
 #Chadwick-blog {
+  padding-top: 7vw;
+  padding-bottom: 8vw;
   padding-left: 3vw;
   padding-right: 3vw;
+  background-color: #ed72724a;
 }
 
 .Chadwick-blog-title {
@@ -240,7 +245,7 @@
   text-decoration: underline;
   color: black;
   margin-top: 1vw;
-  font-size: 1vw;
+  font-size: min(1vw, 15px);
 }
 
 /* Quote Section */
