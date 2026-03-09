@@ -220,11 +220,13 @@
 }
 
 .sns-instagram {
-    background-color: #c13584;
+    background: #FFCF59;
+    background: linear-gradient(30deg,rgba(255, 207, 89, 1) 0%, rgba(235, 72, 84, 1) 51%, rgba(193, 60, 182, 1) 100%);
 }
 
 .sns-instagram:hover {
-    background-color: #96235f;
+    background: #FFCF59;
+    background: linear-gradient(30deg,rgb(249, 196, 60) 0%, rgb(232, 56, 67) 51%, rgb(194, 41, 182) 100%);
 }
 
 .sns-kakao {
