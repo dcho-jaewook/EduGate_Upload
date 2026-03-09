@@ -212,7 +212,7 @@
 /* Blog Section */
 #Chadwick-blog {
   padding-top: 7vw;
-  padding-bottom: 8vw;
+  padding-bottom: 5vw;
   padding-left: 3vw;
   padding-right: 3vw;
   background-color: #ed72724a;
@@ -246,6 +246,12 @@
   color: black;
   margin-top: 1vw;
   font-size: min(1vw, 15px);
+}
+
+.Chadwick-blog-comment
+{
+    margin-top: 5vw;
+    font-size: 1vw;
 }
 
 /* Quote Section */
