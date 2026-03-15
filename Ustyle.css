@@ -37,7 +37,7 @@
 }
 
 .header-logo {
-    margin-left: 120px;
+    margin-left: calc(20px + 5vw);
     align-self: center;
 }
 

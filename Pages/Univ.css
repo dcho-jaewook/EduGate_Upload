@@ -1,0 +1,317 @@
+#Chadwick-title {
+    font-size: 2.5vw;
+    padding: 4vw;
+    background-color: #e41e1e;
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-40vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.Chadwick-title-box {
+  z-index: 2;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 2vw;
+  height: 8.5vw;
+  width: 60vw;
+  animation: 1.2s ease-out 0s 1 slideInFromLeft;
+}
+
+.Chadwick-title-box-text {
+  font-weight: 500;
+  font-size: 3.8vw;
+  white-space: nowrap;
+}
+
+.Chadwick-title-box-deco {
+  position: absolute;
+  z-index: 1;
+  top: 1vw;
+  left: 1vw;
+  border: solid white 0.2vw;
+  /*background-color: transparent;*/
+  height: 8.5vw;
+  width: 60vw;
+}
+
+/* Programs Section */
+
+#Chadwick-programs {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.Chadwick-programs-program {
+  box-sizing: border-box;
+  width: 25vw;
+  padding-top: 1.5vw;
+  padding-bottom: 2vw;
+}
+
+.Chadwick-programs-1 {
+  background-color: rgb(240, 240, 240);
+}
+
+.Chadwick-programs-2 {
+  background-color: rgb(230, 230, 230);
+}
+
+.Chadwick-programs-3 {
+  background-color: rgb(210, 210, 210);
+}
+
+.Chadwick-programs-4 {
+  background-color: rgb(190, 190, 190);
+}
+
+.Chadwick-programs-program-title {
+  font-weight: 600;
+  font-size: 1.7vw;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.Chadwick-programs-program p {
+  padding: 1.2vw;
+  font-size: 1.2vw;
+}
+
+/* Strategy Section */
+
+#Chadwick-strategy {
+  margin-top: 10vw;
+  box-sizing: border-box;
+}
+
+.Chadwick-strategy-title {
+  font-weight: 600;
+  font-size: 4vw;
+  margin-bottom: 1vw;
+  text-align: center;
+}
+
+.Chadwick-strategy-container {
+  display: flex;
+}
+
+.Chadwick-strategy-container .Chadwick-strategy-ele:nth-child(1) {
+  background-color: #ed7272;
+}
+
+.Chadwick-strategy-container .Chadwick-strategy-ele:nth-child(2) {
+  background-color: #ed7272c8;
+}
+
+.Chadwick-strategy-container .Chadwick-strategy-ele:nth-child(3) {
+  background-color: #ed727279;
+}
+
+.Chadwick-strategy-ele {
+  width: 33.3vw;
+  padding: 4vw 0;
+}
+
+.Chadwick-strategy-ele-title {
+  text-align: center;
+  font-weight: 800;
+  font-size: 1.7vw;
+}
+
+.Chadwick-strategy-ele-title span {
+  font-weight: 400;
+}
+
+.Chadwick-strategy-ele-para {
+  margin-top: 2vw;
+  padding: 0 2vw;
+  font-size: 1.4vw;
+}
+
+/* Impact */
+#Chadwick-impact {
+  margin-top: 5vw;
+  margin-bottom: 10vw;
+  padding-left: 10vw;
+}
+
+.Chadwick-impact-line img {
+  width: 7vw;
+}
+
+.Chadwick-impact-line h2 {
+  font-size: 2.5vw;
+  font-style:italic;
+  display: inline;
+  position: relative;
+  top: -2.5vw;
+}
+
+.Chadwick-impact-line p {
+  font-size: 1.5vw;
+  display: block;
+  font-style:italic;
+  padding-left: 8vw;
+  position: relative;
+  top: -1.5vw;
+}
+
+/* Programs2 section */
+
+#Chadwick-programs2 {
+  display: flex;
+  box-sizing: border-box;
+  margin-bottom: 10vw;
+}
+
+.Chadwick-programs2-program {
+  box-sizing: border-box;
+  width: 25vw;
+  padding-top: 1.5vw;
+  padding-bottom: 2vw;
+}
+
+.Chadwick-programs2-1 {
+  background-color: rgb(240, 240, 240);
+}
+
+.Chadwick-programs2-2 {
+  background-color: rgb(230, 230, 230);
+}
+
+.Chadwick-programs2-3 {
+  background-color: rgb(210, 210, 210);
+}
+
+.Chadwick-programs2-4 {
+  background-color: rgb(190, 190, 190);
+}
+
+.Chadwick-programs2-program-title {
+  font-weight: 600;
+  font-size: 1.5vw;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.Chadwick-programs2-program p {
+  padding: 1.2vw;
+  font-size: 1.2vw;
+}
+
+/* Philosophy Section */
+#Univ-phil {
+  padding-top: 7vw;
+  padding-bottom: 8vw;
+  padding-left: 6vw;
+  padding-right: 3vw;
+  background-color: #ffffff;
+}
+
+.Univ-phil-title {
+    margin-bottom: 2vw;
+    font-size: 3.5vw;
+}
+
+.Univ-phil-para {
+    font-size: 1.5vw;
+    margin-bottom: 2vw;
+}
+
+.Univ-phil-container
+{
+    display: flex;
+    /* justify-content: space-between; */
+    margin-top: 3vw;
+}
+
+.Univ-phil-quote {
+    padding-left: 5vw;
+    font-size: 1.5vw;
+    /* margin-right: 10vw; */
+    font-style: italic;
+    align-self: flex-start;
+}
+
+/* Blog Section */
+#Chadwick-blog {
+  padding-top: 7vw;
+  padding-bottom: 8vw;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  background-color: #ed72724a;
+}
+
+.Chadwick-blog-title {
+  text-align: center;
+  font-size: 3.5vw;
+  margin-bottom: 1vw;
+}
+
+.Univ-blog-sub-title {
+    text-align: center;
+    font-size: 1.5vw;
+    margin-bottom: 3vw;
+    font-weight: 400;
+}
+
+.Chadwick-blog-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Univ-blog-ele {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30vw;
+}
+
+.Univ-blog-ele img {
+  width: 27vw;
+}
+
+.Chadwick-blog-ele-title {
+  text-align: center;
+  text-decoration: underline;
+  color: black;
+  margin-top: 1vw;
+  font-size: min(1vw, 15px);
+}
+
+.Chadwick-blog-comment
+{
+    margin-top: 5vw;
+    font-size: 1vw;
+}
+
+/* Quote Section */
+#Chadwick-quote {
+  box-sizing: border-box;
+  height: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 10vw;
+  margin-top: 10vw;
+}
+
+.Chadwick-quote-ele {
+  text-align: center;
+  font-size: 3vw;
+  font-style: italic;
+}
+
+#empty {
+  height: 10vh;
+}
