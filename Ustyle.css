@@ -11,7 +11,6 @@
 }
 
 /* Invisible */
-.header-menu-College,
 .header-menu-SAT,
 .header-menu-Med {
     display: none;
@@ -38,7 +37,7 @@
 }
 
 .header-logo {
-    margin-left: 120px;
+    margin-left: calc(20px + 5vw);
     align-self: center;
 }
 
@@ -55,7 +54,7 @@ a:has(h1.header-logo-text) {
 .header-menu {
     margin-right: 5vw;
     display: flex;
-    width: 30vw;
+    width: 50vw;
     justify-content: space-between;
 }
 
